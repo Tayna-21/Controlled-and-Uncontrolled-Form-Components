@@ -1,0 +1,368 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+  background-color: #1a243b;
+  padding: 1rem;
+  min-height: 100vh;
+}
+@media (max-width: 1023px) {
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 50px;
+  }
+}
+.wrapper .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  max-width: 600px;
+  width: 50%;
+}
+@media (max-width: 1023px) {
+  .wrapper .item {
+    width: 100%;
+  }
+}
+.wrapper .item h1 {
+  font-size: calc(16px + 1.6326530612vw);
+  font-weight: 500;
+  color: white;
+}
+.wrapper .item .form-background {
+  width: 100%;
+  background-color: #233152;
+  border-radius: 10px;
+  border: 1px solid #4f5f85;
+  padding: 10px 20px;
+}
+.wrapper .item .form-background .container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.wrapper .item .form-background .container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  padding: 30px 0;
+}
+.wrapper .item .form-background .container form .form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+.wrapper .item .form-background .container form .form-field label {
+  font-size: calc(14px + 0.306122449vw);
+  line-height: 1.5em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.wrapper .item .form-background .container form .form-field input {
+  width: 100%;
+  padding-bottom: 7px;
+  background: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+  font-size: calc(14px + 0.5102040816vw);
+}
+.wrapper .item .form-background .container form .form-field input:hover {
+  cursor: pointer;
+}
+.wrapper .item .form-background .container form .form-field input:focus:not(:-moz-placeholder-shown) {
+  border-bottom: 2px solid #ffffff;
+}
+.wrapper .item .form-background .container form .form-field input:focus:not(:-ms-input-placeholder) {
+  border-bottom: 2px solid #ffffff;
+}
+.wrapper .item .form-background .container form .form-field input:focus:not(:placeholder-shown) {
+  border-bottom: 2px solid #ffffff;
+}
+.wrapper .item .form-background .container form .form-field input:focus:-moz-placeholder-shown {
+  border-bottom: 1px solid #ffffff;
+}
+.wrapper .item .form-background .container form .form-field input:focus:-ms-input-placeholder {
+  border-bottom: 1px solid #ffffff;
+}
+.wrapper .item .form-background .container form .form-field input:focus:placeholder-shown {
+  border-bottom: 1px solid #ffffff;
+}
+.wrapper .item .form-background .container form .form-field input:not(:focus):-moz-placeholder-shown {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+.wrapper .item .form-background .container form .form-field input:not(:focus):-ms-input-placeholder {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+.wrapper .item .form-background .container form .form-field input:not(:focus):placeholder-shown {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+.wrapper .item .form-background .container form .form-field input[validity=invalid] {
+  border-bottom: 1px solid #dc2626;
+}
+.wrapper .item .form-background .container form .form-field input[validity=invalid]:not(:focus):-moz-placeholder-shown {
+  border-bottom: 1px solid #dc2626;
+}
+.wrapper .item .form-background .container form .form-field input[validity=invalid]:not(:focus):-ms-input-placeholder {
+  border-bottom: 1px solid #dc2626;
+}
+.wrapper .item .form-background .container form .form-field input[validity=invalid]:not(:focus):placeholder-shown {
+  border-bottom: 1px solid #dc2626;
+}
+.wrapper .item .form-background .container form .form-field ::-webkit-input-placeholder {
+  font-size: calc(10px + 0.5102040816vw);
+  color: rgba(255, 255, 255, 0.8);
+}
+.wrapper .item .form-background .container form .form-field ::-moz-placeholder {
+  font-size: calc(10px + 0.5102040816vw);
+  color: rgba(255, 255, 255, 0.8);
+}
+.wrapper .item .form-background .container form .form-field :-ms-input-placeholder {
+  font-size: calc(10px + 0.5102040816vw);
+  color: rgba(255, 255, 255, 0.8);
+}
+.wrapper .item .form-background .container form .form-field ::-ms-input-placeholder {
+  font-size: calc(10px + 0.5102040816vw);
+  color: rgba(255, 255, 255, 0.8);
+}
+.wrapper .item .form-background .container form .form-field ::placeholder {
+  font-size: calc(10px + 0.5102040816vw);
+  color: rgba(255, 255, 255, 0.8);
+}
+.wrapper .item .form-background .container form .form-field input:hover::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  will-change: transform;
+}
+.wrapper .item .form-background .container form .form-field input:hover::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  -moz-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  will-change: transform;
+}
+.wrapper .item .form-background .container form .form-field input:hover:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  -ms-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  will-change: transform;
+}
+.wrapper .item .form-background .container form .form-field input:hover::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  -ms-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  will-change: transform;
+}
+.wrapper .item .form-background .container form .form-field input:hover::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  will-change: transform;
+}
+.wrapper .item .form-background .container form .form-field .input-container {
+  width: 100%;
+  position: relative;
+}
+.wrapper .item .form-background .container form .form-field .input-container svg {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+.wrapper .item .form-background .container form .form-field .input-container svg:hover {
+  cursor: pointer;
+}
+.wrapper .item .form-background .container form .form-field .error-message {
+  font-size: 14px;
+  color: #dc2626;
+}
+.wrapper .item .form-background .container form .agreement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrapper .item .form-background .container form .agreement p, .wrapper .item .form-background .container form .agreement a {
+  color: #ffffff;
+  font-size: calc(12px + 0.1020408163vw);
+  letter-spacing: 0.01em;
+}
+.wrapper .item .form-background .container form .agreement p {
+  margin-left: 7px;
+}
+.wrapper .item .form-background .container form .agreement a:hover {
+  text-decoration: underline;
+  color: #22c55e;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  will-change: transform;
+  cursor: pointer;
+}
+.wrapper .item .form-background .container form .agreement label {
+  display: block;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+.wrapper .item .form-background .container form .agreement label input[type=checkbox] {
+  position: absolute;
+}
+.wrapper .item .form-background .container form .agreement label input[type=checkbox]:checked ~ .check-icon {
+  border: none;
+  background-color: #22c55e;
+}
+.wrapper .item .form-background .container form .agreement label input[type=checkbox]:checked ~ .check-icon:after {
+  display: block;
+}
+.wrapper .item .form-background .container form .agreement label .check-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ffffff;
+}
+.wrapper .item .form-background .container form .agreement label .check-icon:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 3px;
+  width: 4px;
+  height: 7px;
+  border: solid #233152;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.wrapper .item .form-background .container form input[type=submit] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+  height: 50px;
+  background-color: #22c55e;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5em;
+  border-radius: 7px;
+}
+.wrapper .item .form-background .container form input[type=submit]:hover {
+  background-color: #15803d;
+  border: 1px solid #ffffff;
+  -webkit-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+  will-change: transform;
+  cursor: pointer;
+}
+.wrapper .item .form-background .container form input[type=submit]:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+.wrapper .item .form-background .container form span {
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
